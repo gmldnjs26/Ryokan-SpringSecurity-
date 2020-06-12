@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+ 
+<mapper namespace="com.gwak.mapper.RoomMapper">
+    <select id="getRoomList" resultType="com.gwak.dto.RoomVO">
+    	SELECT * FROM RYOKAN_ROOMS 
+    </select>
+    
+    <select id="getRoomOne" resultType="com.gwak.dto.RoomVO" parameterType="int">
+    	SELECT * FROM RYOKAN_ROOMS WHERE R_CODE = #{r_code} 
+    </select>
+</mapper>
+
+

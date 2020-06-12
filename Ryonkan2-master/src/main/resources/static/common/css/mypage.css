@@ -1,0 +1,93 @@
+.tabCont {
+	margin: 50px 0 50px 0px;
+}
+.tabCont, .mypage {
+	margin: 50px 0 50px 300px;
+}
+
+
+.tabCont element.style {
+	display: block;
+}
+
+
+.tabCont colgroup {
+	display: table-column-group;
+}
+
+.tabCont .tb-1 {
+	border-top: solid 2px .604d40;
+}
+
+.tabCont thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.tabCont table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 80%;
+}
+
+.tabCont body, table {
+	font-family: ヒラギノ角ゴ Pro W3;
+	font-size: 14px;
+	line-height: 1.6;
+	color: .666;
+	letter-spacing: 0.1em;
+	word-break: keep-all;
+	word-wrap: break-word;
+}
+
+.tabCont table {
+	display: table;
+	border-color: grey;
+}
+
+.tabCont .tbList th, .tbList td {
+	padding: 13px 16px 15px;
+	text-align: center;
+}
+
+.tabCont .tb-1 th {
+	background: .fafafa;
+	font-weight: bold;
+	color: .111;
+}
+
+.tabCont .tb-1 td {
+	color: .333;
+}
+
+.tabCont.tb-1 th,.tabCont .tb-1 td {
+	border-bottom: solid 1px .e5e5e5;
+	box-sizing: border-box;
+}
+
+.tabCont th {
+	display: table-cell;
+	vertical-align: inherit;
+}
+
+.tabCont col {
+	display: table-column;
+}
+
+.tabCont tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.tabCont tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.tabCont td {
+	display: table-cell;
+	vertical-align: inherit;
+}

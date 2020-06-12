@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+ 
+<mapper namespace="com.gwak.mapper.MemberMapper">
+    <select id="getOneMember" resultType="com.gwak.dto.MemberVO" parameterType="String">
+    	SELECT * FROM RYOKAN_MEMBERS WHERE MBER_ID = #{mber_id} 
+    </select>
+    
+    <insert id="join" parameterType="com.gwak.dto.MemberVO" >
+    	INSERT INTO RYOKAN_MEMBERS (MBER_ID, PW, MBER_SEX, MBER_COUNTRY, MBER_NM, MBER_NM_YOMI, 
+    	MBER_TELNO, MBER_BIRTH, EMAIL, ZIP_NUM, ADRES, EMAIL_RECPTN_YN, SMS_RECPTN_YN, DM_RECPTN_YN) 
+    	VALUES (#{mber_id}, #{pw}, #{mber_sex}, #{mber_country}, #{mber_nm}, #{mber_nm_yomi}, #{mber_telno}, 
+    	#{mber_birth_db}, #{email}, #{zip_num}, #{adres}, #{email_recptn_yn}, #{sms_recptn_yn}, #{dm_recptn_yn});
+    </insert>
+    
+    <select id="getAllMember" resultType="com.gwak.dto.MemberVO">
+    	SELECT * FROM RYOKAN_MEMBERS
+    </select>
+    
+    <select id="totalRecord" resultType="int">
+    	SELECT COUNT(*) FROM RYOKAN_MEMBERS
+    </select>
+    
+    <update id="updateMember" parameterType="com.gwak.dto.MemberVO">
+		UPDATE RYOKAN_MEMBERS
+		SET MBER_TELNO=#{telno}, EMAIL_RECPTN_YN=#{email_recptn_yn}, GRADE=#{grade},
+			  SMS_RECPTN_YN=#{sms_recptn_yn},DM_RECPTN_YN=#{dm_recptn_yn},
+			  MILEAGE=#{mileage},MBER_COMMENT=#{mber_comment}
+		WHERE MBER_ID=#{mber_id}
+	</update>
+    
+</mapper>
+
+

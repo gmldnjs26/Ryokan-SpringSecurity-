@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*@import url(../font.googleapis.com/earlyaccess/notosanskr.css);*/
+@font-face {
+    font-family:NotoSans;
+    font-weight:normal;
+    src:local(※), url(../font/NotoSansKR-Light.woff) format('woff');
+}
+
+@font-face {
+    font-family:NotoSans;
+    font-weight:bold;
+    src:local(※), url(../font/NotoSansKR-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family:NotoSans;
+    font-weight:800;
+    src:local(※), url(../font/NotoSansKR-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'IropkeBatangM';
+  src: url('../font/IropkeBatangM.eot');
+  src: url('../font/IropkeBatangM.woff') format('woff'),
+       url('../font/IropkeBatangM.ttf') format('truetype'),
+       url('../font/IropkeBatangM.svg#IropkeBatangM') format('svg'),
+       url('../font/IropkeBatangM.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font_ib { font-family:IropkeBatangM, 'Noto Sans KR', sans-serif; font-weight:normal}
+
+/* reset */
+html * {max-height: 999999px} /* font size bug fix */
+html,body{margin:0px;padding:0px;width:100%;font-size:10px;font-family: NotoSans, Arial, sans-serif;-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;/*letter-spacing:-1px*/}
+ul,ol,li,dl,dd,dt,input,h1,h2,h3,h4,h5,h6,p,b,input,button,textarea,fieldset,legend,td,th{margin:0px;padding:0px;font-weight:bold;word-break:keep-all}
+li{list-style:none}
+fieldset,img,a{border:0px}
+a{text-decoration:none}
+legend,.blind{position:absolute;top:0;left:-10000px;width:0;height:0;overflow:hidden;font-size:0;line-height:0}
+caption{display:none}
+button,label{cursor:pointer}
+button{overflow:visible\9}	/* button fix for ie8 */
+input,textarea,button,select,option{font-family: NotoSans, Arial, sans-serif;}
+table{width:100%;border-collapse:collapse;border-spacing:0;text-align:left; table-layout:fixed}
+table th, table td{text-align:left; word-break:break-word;word-wrap:break-word;}
+input::-webkit-input-placeholder{color:#929292}
+input::-moz-placeholder{color:#929292}
+input:-moz-placeholder{color:#929292}
+input:-ms-input-placeholder{color:#929292}
+textarea::-webkit-input-placeholder{color:#929292}
+textarea::-moz-placeholder{color:#929292}
+textarea:-moz-placeholder{color:#929292}
+textarea:-ms-input-placeholder{color:#929292}
+input:focus::-webkit-input-placeholder{color:transparent!important}
+input:focus::-moz-placeholder{color:transparent!important}
+input:focus:-moz-placeholder{color:transparent!important}
+input:focus:-ms-input-placeholder{color:transparent!important}
+textarea:focus::-webkit-input-placeholder{color:transparent!important}
+textarea:focus::-moz-placeholder{color:transparent!important}
+textarea:focus:-moz-placeholder{color:transparent!important}
+textarea:focus:-ms-input-placeholder{color:transparent!important}
+header, footer, section, article, aside, nav, address { display: block; margin:0; } /* ie8 */
+
+.clear_wrap:before,.clear_wrap:after{content:" ";display:table}
+.clear_wrap:after{clear:both}
+.clear_wrap{*zoom:1}
+.clear_ine{clear:both}
+.ellipsis{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.appearance{border:0;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none}
+.boxsizing{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.mobilescrolling{-webkit-overflow-scrolling:touch}
+
+.bg_cover{background-size:cover;background-position:center center;background-repeat:no-repeat}
+.bg_cover .bg_img,
+.bg_cover .bg{display:none}
+
+.table_box{display:table;width:100%;table-layout:fixed}
+.table_box .table_td{display:table-cell;vertical-align:middle}
+.mobile{display:none!important}

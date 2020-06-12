@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+ 
+<mapper namespace="com.gwak.mapper.PlanMapper">
+    <select id="getAllMealList" resultType="com.gwak.dto.MealVO">
+    	SELECT * FROM RYOKAN_MEALS
+    </select>
+    
+    <select id="getMeal" resultType="com.gwak.dto.MealVO" parameterType="int">
+		SELECT * FROM RYOKAN_MEALS WHERE M_CODE=#{m_code}
+	</select>
+    
+</mapper>
+
+

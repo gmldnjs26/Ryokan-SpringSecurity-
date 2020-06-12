@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+ 
+<mapper namespace="com.gwak.mapper.PayMapper">
+	<insert id="save" parameterType="map">
+		INSERT INTO RYOKAN_PAYMENT(MBER_ID,P_PRICE) VALUES(#{mber_id},#{p_price})
+		
+		<selectKey keyProperty="p_code" resultType="Integer">
+       		SELECT LAST_INSERT_ID()
+   		</selectKey>
+	</insert>
+</mapper>
+
+

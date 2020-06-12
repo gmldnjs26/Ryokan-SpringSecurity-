@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" > 
+<mapper namespace="com.gwak.mapper.ReserveMapper">
+	<resultMap type="com.gwak.dto.PaymentVO" id="Payment">
+		<result column="p_code" property="p_code"/>
+		<result column="p_way" property="p_way" />
+		<result column="p_date" property="p_date" />
+		<result column="p_status" property="p_status"/>
+		<result column="p_price" property="p_price" />
+	</resultMap>
+	
+	<resultMap type="utils.ReserveJoinVO" id="ReserveJoin">
+		<result column="re_code" property="re_code" />
+		<result column="mber_id" property="mber_id" />
+		<result column="check_in" property="check_in" />
+		<result column="check_out" property="check_out" />
+		<result column="num_people" property="num_people" />
+		<result column="re_status" property="re_status" />
+		<result column="re_date" property="re_date" />
+		<result column="re_memo" property="re_memo" />
+		<association property="paymentVO" resultMap="Payment"/>
+	</resultMap>
+	
+	<select id="getReserveJoinList" resultMap="ReserveJoin">
+		SELECT *
+		
+		FROM RYOKAN_RESERVES R, RYOKAN_PAYMENT P
+		WHERE R.P_CODE = P.P_CODE
+	
+	</select>
+
+    <select id="getRoomReserveList" resultType="com.gwak.dto.ReserveVO" parameterType="int">
+    	SELECT * FROM RYOKAN_RESERVES WHERE R_CODE = #{r_code} 
+    </select>
+    
+    <select id="getAllReserveList" resultType="com.gwak.dto.ReserveVO" >
+    	SELECT * FROM RYOKAN_RESERVES
+    </select>
+    
+    <select id="getMemberReserveList" resultType="com.gwak.dto.ReserveVO" parameterType="String" >
+    	SELECT * FROM RYOKAN_RESERVES WHERE MBER_ID = #{mber_id}
+    </select>
+    
+    <insert id="save" parameterType="com.gwak.dto.ReserveVO">
+    	INSERT INTO RYOKAN_RESERVES (MBER_ID, CHECK_IN, CHECK_OUT, NUM_PEOPLE, R_CODE, M_CODE, P_CODE, RE_MEMO) 
+    	VALUES (#{mber_id},#{check_in},#{check_out},#{num_people},#{r_code},#{m_code},#{p_code},#{re_memo})
+    </insert>
+    
+    <select id="totalRecord" resultType="int">
+    	SELECT COUNT(*) FROM RYOKAN_RESERVES
+    </select>
+    
+    <select id="findOne" resultType="com.gwak.dto.ReserveVO" parameterType="int">
+    	SELECT * FROM RYOKAN_RESERVES WHERE RE_CODE=#{re_code}
+    </select>
+    
+    <update id="updateStatus" parameterType="map">
+    	UPDATE RYOKAN_RESERVES SET RE_STATUS=#{re_status} WHERE RE_CODE=#{re_code} 
+    </update>
+    
+    <delete id="delete" parameterType="int">
+    	DELETE FROM RYOKAN_RESERVES WHERE RE_CODE = #{re_code}
+    </delete>
+</mapper>
+
+

@@ -1,0 +1,262 @@
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #009933;
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+td {
+	font-size: 12px;
+	font-family: "±¼¸²", "µ¸¿ò";
+	color: #000000;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+body {
+	background-color: #ffffff;
+	margin-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	SCROLLBAR-FACE-color: #CFCFCF;
+	SCROLLBAR-3DLIGHT-color: #CFCFCF;
+	SCROLLBAR-ARROW-color: #ffffff;
+	SCROLLBAR-DARKSHADOW-color: #CFCFCF;
+	SCROLLBAR-BASE-color: #CFCFCF;
+}
+
+.input {
+	font-size: 9pt;
+	font-family: "±¼¸²", "µ¸¿ò";
+	color: #545454;
+	border-width: 1pt;
+	border-style: solid;
+	background-color: #ffffff;
+	border-color: #cccccc;
+	line-height: 16px;
+}
+
+.textarea {
+	font-size: 9pt;
+	font-family: "±¼¸²", "µ¸¿ò";
+	color: #545454;
+	border-width: 1pt;
+	border-style: solid;
+	background-color: #ffffff;
+	border-color: #cccccc;
+}
+
+.login_input {
+	font-size: 9pt;
+	font-family: "±¼¸²", "µ¸¿ò";
+	color: #545454;
+	border-width: 1pt;
+	border-style: solid;
+	background-color: #ffffff;
+	border-color: #cccccc;
+	height: 20px;
+}
+
+.s11 {
+	font-size: 11px;
+	font-family: "±¼¸²", "µ¸¿ò";
+	color: #000000;
+	line-height: 160%;
+}
+
+.s01 {
+	font-size: 11px;
+	color: #000000;
+	font-family: "µ¸¿ò";
+	letter-spacing: 0px;
+	line-height: 16px;
+}
+
+.s02 {
+	font-size: 11px;
+	color: #6d6d6d;
+	font-family: "µ¸¿ò";
+	letter-spacing: -1px;
+	line-height: 10px;
+}
+
+.s03 {
+	font-size: 11px;
+	color: #ffffff;
+	font-family: "µ¸¿ò";
+	letter-spacing: -1px;
+	line-height: 14px;
+	font-weight: bold;
+}
+
+.s04 {
+	font-size: 11px;
+	color: #666666;
+	font-family: "µ¸¿ò";
+	letter-spacing: -1px;
+	line-height: 14px;
+	padding-left: 20px;
+}
+
+.left_tit {
+	font-size: 12px;
+	font-family: "±¼¸²", "µ¸¿ò";
+	color: #000000;
+	line-height: 140%;
+	padding-left: 5px;
+}
+
+.left_sub {
+	font-size: 12px;
+	color: #666666;
+	font-family: "µ¸¿ò";
+	letter-spacing: -1px;
+	line-height: 14px;
+	padding-left: 15px;
+}
+
+.chk_alt {
+	font-size: 12px;
+	color: #ffffff;
+	font-family: "µ¸¿ò";
+	line-height: 20px;
+}
+
+.tit {
+	font-size: 16px;
+	color: #000000;
+	font-family: "µ¸¿ò";
+	letter-spacing: -1px;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.tit_sub {
+	font-size: 13px;
+	color: #000000;
+	font-family: "µ¸¿ò";
+	letter-spacing: -1px;
+	line-height: 25px;
+	height: 25px;
+	font-weight: bold;
+}
+
+.tit_alt {
+	font-size: 11px;
+	color: #6d6d6d;
+	font-family: "µ¸¿ò";
+	letter-spacing: -1px;
+	line-height: 10px;
+}
+
+.t_rd {
+	border-left: 2px solid #ffffff;
+	border-right: 2px solid #ffffff;
+	background-color: #539ab8;
+	height: 1px;
+}
+
+.t_th {
+	font-size: 11px;
+	color: #ffffff;
+	text-align: center;
+	height: 26px;
+	background-image: url('/admin/manage/image/list_bg.gif');
+	background-repeat: repeat-x;
+}
+
+.t_line {
+	background: #dcd8d6;
+}
+
+.t_style {
+	font-size: 12px;
+	background: #b8d9e1;
+}
+
+.t_name {
+	font-size: 12px;
+	font-family: "±¼¸²", "µ¸¿ò";
+	color: #11809f;
+	background: #e8f3f7;
+	line-height: 15px;
+	padding-left: 10px;
+	height: 30px
+}
+
+.t_bname {
+	font-size: 12px;
+	font-family: "±¼¸²", "µ¸¿ò";
+	font-weight: bold;
+	color: #000000;
+	background: #f6f6f6;
+	line-height: 10px;
+	padding-left: 10px
+}
+
+.t_value {
+	font-size: 12px;
+	font-family: "±¼¸²", "µ¸¿ò";
+	color: #555555;
+	background: #ffffff;
+	line-height: 20px;
+	padding-left: 10px
+}
+
+.btn_s {
+	cursor: hand;
+	font-size: 12px;
+	font-family: µ¸¿ò;
+	BACKGROUND-COLOR: #555555;
+	BORDER-BOTTOM: #000000 1px solid;
+	BORDER-LEFT: #999999 1px solid;
+	BORDER-RIGHT: #000000 1px solid;
+	BORDER-TOP: #999999 1px solid;
+	COLOR: #ffffff;
+	HEIGHT: 20px;
+	line-height: 18px;
+}
+
+.btn_m {
+	cursor: hand;
+	font-size: 12px;
+	font-family: µ¸¿ò;
+	BACKGROUND-COLOR: #7D726E;
+	BORDER-BOTTOM: #7D726E 1px solid;
+	BORDER-LEFT: #B7AEAB 1px solid;
+	BORDER-RIGHT: #7D726E 1px solid;
+	BORDER-TOP: #B7AEAB 1px solid;
+	COLOR: #ffffff;
+	HEIGHT: 20px;
+	line-height: 18px;
+}
+
+.btn_l {
+	cursor: hand;
+	font-size: 12px;
+	font-family: µ¸¿ò;
+	BACKGROUND-COLOR: #a2b700;
+	BORDER-BOTTOM: #7a8a02 1px solid;
+	BORDER-LEFT: #becd4d 1px solid;
+	BORDER-RIGHT: #7a8a02 1px solid;
+	BORDER-TOP: #becd4d 1px solid;
+	COLOR: #ffffff;
+	HEIGHT: 20px;
+	line-height: 18px;
+}
